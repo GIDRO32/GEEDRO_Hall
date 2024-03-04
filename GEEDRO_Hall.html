@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Display</title>
+    <style>
+        body {
+            background-color: rgb(153, 0, 255);
+            color: rgb(61, 0, 160);
+            font-family: Arial, sans-serif;
+        }
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" id="userInput" placeholder="Enter something...">
+    <button onclick="submitText()">Submit</button>
+
+    <div id="output"></div>
+
+    <script>
+        function submitText() {
+            var input = document.getElementById("userInput").value;
+            var outputDiv = document.getElementById("output");
+            outputDiv.innerHTML += input + "<br>"; // Appends the new input below previous ones
+        }
+    </script>
+
+</body>
+</html>
