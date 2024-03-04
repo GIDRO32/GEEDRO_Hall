@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    text-align: right;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px; /* Adjust based on your logo's size */
+}
+
+.site-info {
+    display: inline-block;
+    text-align: left;
+}
+
+.version {
+    font-weight: bold;
+}
+
+.features {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+}
+
+.features li {
+    margin-bottom: 5px;
+}
