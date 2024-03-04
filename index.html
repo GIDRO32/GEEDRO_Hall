@@ -20,7 +20,35 @@
         </div>
     </div>
 
-    <!-- Your existing content -->
+<head>
+    <title>Input Display</title>
+    <style>
+        body {
+            background-color: purple;
+            color: darkmagenta;
+            font-family: Arial, sans-serif;
+        }
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" id="userInput" placeholder="Enter something...">
+    <button onclick="submitText()">Submit</button>
+
+    <div id="output"></div>
+
+    <script>
+        function submitText() {
+            var input = document.getElementById("userInput").value;
+            var outputDiv = document.getElementById("output");
+            outputDiv.innerHTML += input + "<br>"; // Appends the new input below previous ones
+        }
+    </script>
+
+</body>
 
     <script src="script.js"></script>
 </body>
